@@ -30,7 +30,7 @@ for i = 1:n
     del_y = 1/6*(k1 + 2*k2 + 2*k3 + k4);
     y = y_prev + del_y;
     fprintf('y(%f) = %.4f\n',x_next, y);
-    x_prev = x_prev+h;
+    x_prev = x_next;
     y_prev = y;
     x_next = x_next + h;
 end
