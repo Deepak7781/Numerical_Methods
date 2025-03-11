@@ -6,6 +6,7 @@ x = input("Enter the values of x as a matrix :");
 func = input('Enter a function in terms of x :','s');
 func = strrep(func, '^', '.^');
 func = strrep(func, '/', './');
+func = strrep(func, '*', '.*');
 
 y = str2func(['@(x)', func]);
 
