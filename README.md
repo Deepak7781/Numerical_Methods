@@ -18,5 +18,5 @@ This collection includes implementations of popular numerical methods, such as:
 1. **Prerequisites**: Ensure you have MATLAB installed (version R20XXx or later recommended).
 2. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/Numerical_Methods.git
+   git clone https://github.com/Deepak7781/Numerical_Methods.git
 3. **Run the Code**: Open MATLAB, navigate to the repository folder, and execute a script (e.g., Runge_Kutta_4th_order.m).
