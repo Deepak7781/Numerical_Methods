@@ -1,10 +1,21 @@
-% Newton-Rapson method
+% Newton-Raphson method
 % x_n+1 = x_n - (f(x_n)/f'(x_n))
 
 func_str = input('Enter the function :','s');
 func = str2func(['@(x)',func_str]);
 
-x0 = input('Enter the initial value of x:');
+x0 = input('Enter the initial value of x (or just press enter) :');
+
+if isempty(x0)
+    for i = 1:100
+        if func(i) * func(i + 1) < 0
+            x0 = i;
+            fprintf('Initial guess found at x0 = %d\n', x0);
+            break;
+        end
+    end
+end
+
 
 n = input('Enter the number of iterations :');
 
